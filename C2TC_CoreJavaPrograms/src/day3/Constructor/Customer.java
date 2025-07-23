@@ -8,15 +8,23 @@ public class Customer {
 		
 		public Customer()//constructor
 		{
-			this.cid = 10;
+			/*this.cid = 10;
 			this.name = "govind";
-			this.city = "pune";
+			this.city = "pune";*/
+			System.out.println("This is default constructor");
 		}
 		
 		//parameterized constructor
 		public Customer(int cid, String name, String city)
 		{
+			this();
 			this.cid = cid;
+			this.name = name;
+			this.city = city;
+		}
+		
+		public Customer(String name, String city)
+		{
 			this.name = name;
 			this.city = city;
 		}
